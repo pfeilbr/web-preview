@@ -13,6 +13,8 @@
 		C54EC4FB141167F100613B9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C54EC4F9141167F100613B9C /* Credits.rtf */; };
 		C54EC4FE141167F100613B9C /* WebPreviewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C54EC4FD141167F100613B9C /* WebPreviewAppDelegate.m */; };
 		C54EC501141167F100613B9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54EC4FF141167F100613B9C /* MainMenu.xib */; };
+		C54EC508141168CF00613B9C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54EC507141168CF00613B9C /* WebKit.framework */; };
+		C54EC50F1412BF3600613B9C /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C54EC50E1412BF3600613B9C /* MyApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,17 @@
 		C54EC4ED141167F100613B9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C54EC4EE141167F100613B9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C54EC4EF141167F100613B9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C54EC4F2141167F100613B9C /* WebPreview-Info.plist */ = {isa = PBXFileReference; path = "WebPreview-Info.plist"; sourceTree = "<group>"; };
+		C54EC4F2141167F100613B9C /* WebPreview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebPreview-Info.plist"; sourceTree = "<group>"; };
 		C54EC4F4141167F100613B9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C54EC4F6141167F100613B9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C54EC4F8141167F100613B9C /* WebPreview-Prefix.pch */ = {isa = PBXFileReference; path = "WebPreview-Prefix.pch"; sourceTree = "<group>"; };
+		C54EC4F8141167F100613B9C /* WebPreview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebPreview-Prefix.pch"; sourceTree = "<group>"; };
 		C54EC4FA141167F100613B9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C54EC4FC141167F100613B9C /* WebPreviewAppDelegate.h */ = {isa = PBXFileReference; path = WebPreviewAppDelegate.h; sourceTree = "<group>"; };
+		C54EC4FC141167F100613B9C /* WebPreviewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPreviewAppDelegate.h; sourceTree = "<group>"; };
 		C54EC4FD141167F100613B9C /* WebPreviewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPreviewAppDelegate.m; sourceTree = "<group>"; };
 		C54EC500141167F100613B9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C54EC507141168CF00613B9C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C54EC50D1412BF3600613B9C /* MyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplication.h; sourceTree = "<group>"; };
+		C54EC50E1412BF3600613B9C /* MyApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54EC508141168CF00613B9C /* WebKit.framework in Frameworks */,
 				C54EC4EB141167F100613B9C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +78,7 @@
 		C54EC4EC141167F100613B9C /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C54EC507141168CF00613B9C /* WebKit.framework */,
 				C54EC4ED141167F100613B9C /* AppKit.framework */,
 				C54EC4EE141167F100613B9C /* CoreData.framework */,
 				C54EC4EF141167F100613B9C /* Foundation.framework */,
@@ -86,6 +93,8 @@
 				C54EC4FD141167F100613B9C /* WebPreviewAppDelegate.m */,
 				C54EC4FF141167F100613B9C /* MainMenu.xib */,
 				C54EC4F1141167F100613B9C /* Supporting Files */,
+				C54EC50D1412BF3600613B9C /* MyApplication.h */,
+				C54EC50E1412BF3600613B9C /* MyApplication.m */,
 			);
 			path = WebPreview;
 			sourceTree = "<group>";
@@ -127,6 +136,9 @@
 /* Begin PBXProject section */
 		C54EC4DD141167F100613B9C /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C54EC4E0141167F100613B9C /* Build configuration list for PBXProject "WebPreview" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -164,6 +176,7 @@
 			files = (
 				C54EC4F7141167F100613B9C /* main.m in Sources */,
 				C54EC4FE141167F100613B9C /* WebPreviewAppDelegate.m in Sources */,
+				C54EC50F1412BF3600613B9C /* MyApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
